@@ -1,0 +1,861 @@
+[gd_scene load_steps=47 format=3 uid="uid://bwcgey1ojr88g"]
+
+[ext_resource type="Script" uid="uid://cs21rk7tff00h" path="res://FreePlay.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cqsna1f08rucp" path="res://assets/freeplay/0bg.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://56y25c8baqq0" path="res://assets/freeplay/0fade.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bcvf462afn1v" path="res://assets/freeplay/0borderlayer2.png" id="4"]
+[ext_resource type="FontFile" uid="uid://cple0whnfnr7i" path="res://assets/fonts/MatrixSmallCaps Bold.ttf" id="5"]
+[ext_resource type="Texture2D" uid="uid://lwcfyhms60ix" path="res://assets/build_deck_btn.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bujdd4akshuxs" path="res://assets/backbtn.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bnsdmrskamrxq" path="res://assets/freeplay/unknownfp.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cgc1oha43b1nq" path="res://assets/freeplay/simonmuranfp.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cogyyy6ca3w46" path="res://assets/freeplay/teanafp.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b4jhhx1m8ifbw" path="res://assets/freeplay/jonofp.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bmgt05cjyk0vl" path="res://assets/freeplay/villager1fp.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://c7tjjc0p6l24j" path="res://assets/portraits/villager2fp.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cy2kdv4l2jyd0" path="res://assets/portraits/villager3fp.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://dic0hfkp5g7ip" path="res://assets/portraits/seto1fp.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://fpcoy4yp32x" path="res://assets/portraits/heishin1fp.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cys66lo6pogu5" path="res://assets/portraits/commentatorfp.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://d1g5nmgj2fdb8" path="res://assets/portraits/teagardnerfp.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://bqj427eykc74t" path="res://assets/portraits/yugimutofp.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://c4rh7f5qv6el4" path="res://assets/portraits/rexraptorfp.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://bodcj3ogclfsw" path="res://assets/portraits/weevilunderwoodfp.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bytd15rm8jq2w" path="res://assets/portraits/banditkeithfp.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://bxmcx7ycd2dbr" path="res://assets/portraits/bonzfp.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://rlcpamx67o4x" path="res://assets/portraits/amonfp.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://bw47qffc2l1nw" path="res://assets/portraits/jonathanbicalhofp.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://desewg620sjt7" path="res://assets/chars/unknownfpbig.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://cbnqqfr28kc20" path="res://assets/chars/simonmuranfpbig.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://bi144req77qfd" path="res://assets/chars/teanafpbig.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://b4hbwg66wgdo1" path="res://assets/chars/jonofpbig.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://rw2vk2vcu8dm" path="res://assets/chars/villager1fpbig.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://cagr4nl2pondx" path="res://assets/chars/villager2fpbig.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://b4lbpi50k235o" path="res://assets/chars/villager3fpbig.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://cgmvsqn3q0ysx" path="res://assets/chars/seto1fpbig.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://c73xcshtm4qlf" path="res://assets/chars/heishin1fpbig.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://b7te0kim4h0bb" path="res://assets/chars/commentatorfpbig.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://cgadhlij1twva" path="res://assets/chars/teagardnerfpbig.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://dv4xqrjsomxi4" path="res://assets/chars/yugimutofpbig.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://caexq5unmu38u" path="res://assets/chars/rexraptorfpbig.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://jv4ppp1f5y1u" path="res://assets/chars/weevilunderwoodfpbig.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://dmqmcvmpmp6j" path="res://assets/chars/banditkeithfpbig.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://c48f2fr7jtlgs" path="res://assets/chars/bonzfpbig.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://c46nuu5a0j4bw" path="res://assets/chars/amonfpbig.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://oa7uaoydqdau" path="res://assets/chars/jonathanbicalhofpbig.png" id="43"]
+
+[sub_resource type="FontVariation" id="FontVariation_lmh3q"]
+base_font = ExtResource("5")
+spacing_glyph = 5
+spacing_top = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iv3at"]
+content_margin_left = 5.0
+content_margin_top = 15.0
+content_margin_right = 5.0
+content_margin_bottom = 60.0
+bg_color = Color(0, 0, 0, 0.98039216)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 10
+
+[sub_resource type="FontVariation" id="FontVariation_wvk7s"]
+base_font = ExtResource("5")
+spacing_glyph = 1
+spacing_top = 10
+
+[node name="FreePlay" type="Node2D"]
+script = ExtResource("1")
+metadata/_edit_vertical_guides_ = [365.0]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2")
+
+[node name="Fade" type="TextureRect" parent="."]
+z_index = 2
+offset_left = 95.0
+offset_top = 370.0
+offset_right = 662.0
+offset_bottom = 972.0
+texture = ExtResource("3")
+
+[node name="Border" type="TextureRect" parent="."]
+z_index = 3
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4")
+
+[node name="GoldLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(260, 80)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 235.0
+offset_top = 108.0
+offset_right = 495.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = SubResource("FontVariation_lmh3q")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_iv3at")
+bbcode_enabled = true
+text = "x 0000"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 250.5
+offset_top = 400.0
+offset_right = 483.5
+offset_bottom = 626.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="BuildDeckButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("6")
+
+[node name="BackButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+z_index = 5
+custom_minimum_size = Vector2(955, 740)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 742.5
+offset_top = 136.0
+offset_right = 1697.5
+offset_bottom = 876.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1, 1.1)
+horizontal_scroll_mode = 0
+
+[node name="CharsGrid" type="GridContainer" parent="ScrollContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 45
+theme_override_constants/v_separation = 45
+columns = 5
+
+[node name="UnknownChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8")
+
+[node name="SimonMuranChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("9")
+
+[node name="TeanaChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("10")
+
+[node name="JonoChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("11")
+
+[node name="Villager1Char" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12")
+
+[node name="Villager2Char" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("13")
+
+[node name="Villager3Char" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("14")
+
+[node name="Seto1Char" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("15")
+
+[node name="Heishin1Char" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("16")
+
+[node name="CommentatorChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("17")
+
+[node name="TeaGardnerChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("18")
+
+[node name="YugiMutoChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("19")
+
+[node name="RexRaptorChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("20")
+
+[node name="WeevilUnderwoodChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("21")
+
+[node name="BanditKeithChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("22")
+
+[node name="BonzChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("23")
+
+[node name="AmonChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("24")
+
+[node name="JonathanChar" type="TextureButton" parent="ScrollContainer/CharsGrid"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("25")
+
+[node name="FadeRect" type="ColorRect" parent="."]
+offset_left = -45.0
+offset_top = -47.0
+offset_right = -5.0
+offset_bottom = -7.0
+
+[node name="BigChars" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Unknown" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UnknownBig" type="TextureRect" parent="BigChars/Unknown"]
+layout_mode = 0
+offset_left = -129.0
+offset_top = 75.0
+offset_right = 771.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("26")
+
+[node name="UnknownInfo" type="Label" parent="BigChars/Unknown"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="SimonMuran" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SimonMuranBig" type="TextureRect" parent="BigChars/SimonMuran"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 75.0
+offset_right = 820.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("27")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SimonMuranInfo" type="Label" parent="BigChars/SimonMuran"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Teana" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TeanaBig" type="TextureRect" parent="BigChars/Teana"]
+layout_mode = 0
+offset_left = -75.0
+offset_top = 75.0
+offset_right = 825.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("28")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeanaInfo" type="Label" parent="BigChars/Teana"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Jono" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="JonoBig" type="TextureRect" parent="BigChars/Jono"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = 75.0
+offset_right = 795.0
+offset_bottom = 1075.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("29")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="JonoInfo" type="Label" parent="BigChars/Jono"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Villager1" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Villager1Big" type="TextureRect" parent="BigChars/Villager1"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 75.0
+offset_right = 820.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("30")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Villager1Info" type="Label" parent="BigChars/Villager1"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Villager2" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Villager2Big" type="TextureRect" parent="BigChars/Villager2"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 75.0
+offset_right = 815.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("31")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Villager2Info" type="Label" parent="BigChars/Villager2"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Villager3" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Villager3Big" type="TextureRect" parent="BigChars/Villager3"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 75.0
+offset_right = 815.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("32")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Villager3Info" type="Label" parent="BigChars/Villager3"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Seto1" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Seto1Big" type="TextureRect" parent="BigChars/Seto1"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 75.0
+offset_right = 820.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("33")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Seto1Info" type="Label" parent="BigChars/Seto1"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Heishin1" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heishin1Big" type="TextureRect" parent="BigChars/Heishin1"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 75.0
+offset_right = 815.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("34")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Heishin1Info" type="Label" parent="BigChars/Heishin1"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Commentator" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CommentatorBig" type="TextureRect" parent="BigChars/Commentator"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 75.0
+offset_right = 820.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("35")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CommentatorInfo" type="Label" parent="BigChars/Commentator"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="TeaGardner" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TeaGardnerBig" type="TextureRect" parent="BigChars/TeaGardner"]
+layout_mode = 0
+offset_left = -70.0
+offset_top = 75.0
+offset_right = 830.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("36")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeaGardnerInfo" type="Label" parent="BigChars/TeaGardner"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="YugiMuto" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="YugiMutoBig" type="TextureRect" parent="BigChars/YugiMuto"]
+layout_mode = 0
+offset_left = -70.0
+offset_top = 75.0
+offset_right = 830.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("37")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="YugiMutoInfo" type="Label" parent="BigChars/YugiMuto"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="RexRaptor" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RexRaptorBig" type="TextureRect" parent="BigChars/RexRaptor"]
+layout_mode = 0
+offset_left = -75.0
+offset_top = 75.0
+offset_right = 825.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("38")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RexRaptorInfo" type="Label" parent="BigChars/RexRaptor"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="WeevilUnderwood" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WeevilUnderwoodBig" type="TextureRect" parent="BigChars/WeevilUnderwood"]
+layout_mode = 0
+offset_left = -75.0
+offset_top = 75.0
+offset_right = 825.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("39")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeevilUnderwoodInfo" type="Label" parent="BigChars/WeevilUnderwood"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="BanditKeith" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BanditKeithBig" type="TextureRect" parent="BigChars/BanditKeith"]
+layout_mode = 0
+offset_left = -81.0
+offset_top = 75.0
+offset_right = 819.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("40")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BanditKeithInfo" type="Label" parent="BigChars/BanditKeith"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Bonz" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BonzBig" type="TextureRect" parent="BigChars/Bonz"]
+layout_mode = 0
+offset_left = -81.0
+offset_top = 75.0
+offset_right = 819.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("41")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BonzInfo" type="Label" parent="BigChars/Bonz"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Amon" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AmonBig" type="TextureRect" parent="BigChars/Amon"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 75.0
+offset_right = 815.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("42")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AmonInfo" type="Label" parent="BigChars/Amon"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[node name="Jonathan" type="Control" parent="BigChars"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="JonathanBig" type="TextureRect" parent="BigChars/Jonathan"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 75.0
+offset_right = 815.0
+offset_bottom = 1075.0
+mouse_filter = 2
+texture = ExtResource("43")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="JonathanInfo" type="Label" parent="BigChars/Jonathan"]
+z_index = 2
+layout_mode = 0
+offset_left = 120.0
+offset_top = 800.0
+offset_right = 402.0
+offset_bottom = 949.0
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = SubResource("FontVariation_wvk7s")
+theme_override_font_sizes/font_size = 40
+text = "Name:
+Wins:
+Loses:
+Cards Unlocked:"
+
+[connection signal="pressed" from="VBoxContainer/BuildDeckButton" to="." method="_on_build_deck_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/UnknownChar" to="." method="_on_unknown_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/SimonMuranChar" to="." method="_on_simon_muran_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/TeanaChar" to="." method="_on_teana_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/JonoChar" to="." method="_on_jono_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/Villager1Char" to="." method="_on_villager_1_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/Villager2Char" to="." method="_on_villager_2_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/Villager3Char" to="." method="_on_villager_3_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/Seto1Char" to="." method="_on_seto_1_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/Heishin1Char" to="." method="_on_heishin_1_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/CommentatorChar" to="." method="_on_commentator_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/TeaGardnerChar" to="." method="_on_tea_gardner_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/YugiMutoChar" to="." method="_on_yugi_muto_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/RexRaptorChar" to="." method="_on_rex_raptor_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/WeevilUnderwoodChar" to="." method="_on_weevil_underwood_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/BanditKeithChar" to="." method="_on_bandit_keith_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/BonzChar" to="." method="_on_bonz_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/AmonChar" to="." method="_on_amon_char_pressed"]
+[connection signal="pressed" from="ScrollContainer/CharsGrid/JonathanChar" to="." method="_on_jonathan_char_pressed"]

@@ -1,0 +1,35 @@
+GDRE Tools v2.5.0-beta.4
+Windows 10.0.19045, AMD Radeon(TM) Graphics, vulkan
+Opening file: C:/Users/kinho/Downloads/Yu-Gi-Oh! Forgotten Memories [BETA 1.6.4].exe
+Loaded 1393 imported files
+Detected Engine Version: 4.5.1
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 2797 files, no errors detected!
+Extracted 2797 files, no errors detected!
+ERROR: Failed to find gdextension libraries for plugin res://addons/gdmaim/gdbc/gdbc.gdextension
+   at: GDExtensionExporter::export_resource (modules\gdsdecomp\exporters\gdextension_exporter.cpp:195)
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     104
+Failed scripts:                         0
+Imported resources for export session:  1393
+Successfully converted:                 1392
+Lossy:                                  32
+Rewrote metadata:                       1260
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     1
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.5.1 to edit the project.
+
+*******************************************************************************
+

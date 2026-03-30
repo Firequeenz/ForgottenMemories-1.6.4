@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ForgottenMemories"
+config/version="0.3"
+run/main_scene="res://main_menu.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+config/icon="res://assets/icon.svg"
+
+[autoload]
+
+Global="*res://scripts/Global.gd"
+SceneManage="*res://scripts/SceneManage.gd"
+CardCollection="*res://scripts/CardCollection.gd"
+PlayerDeck="*res://scripts/database/PlayerDeck.gd"
+CardDatabase="*res://scripts/cards/CardDatabase.gd"
+FusionDatabase="*res://scripts/cards/FusionDatabase.gd"
+EnemyDeckDatabase="*res://scripts/database/EnemyDeckDatabase.gd"
+EventBus="*res://scripts/EventBus.gd"
+EffectManager="*res://EffectManager.gd"
+TrapManager="*res://scripts/TrapManager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/size/borderless=true
+window/stretch/mode="viewport"
+
+[editor_overrides]
+
+text_editor/behavior/indent/type=1
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+viewport/hdr_2d=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

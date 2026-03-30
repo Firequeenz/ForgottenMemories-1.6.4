@@ -1,0 +1,147 @@
+[gd_scene load_steps=5 format=3 uid="uid://be41cjq50m678"]
+
+[ext_resource type="Script" uid="uid://daikq6at0qsoi" path="res://scenes/CardInspector.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jypcg"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.98039216)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 10
+
+[sub_resource type="FontVariation" id="FontVariation_jypcg"]
+spacing_top = -5
+spacing_bottom = -5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_jypcg"]
+color = Color(1, 1, 1, 1)
+thickness = 3
+
+[node name="CardInspector" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_right = 383.0
+offset_bottom = 1080.0
+mouse_filter = 2
+script = ExtResource("1")
+metadata/_edit_horizontal_guides_ = [437.0]
+
+[node name="CardPreviewContainer" type="Control" parent="."]
+custom_minimum_size = Vector2(345, 437)
+anchors_preset = 0
+offset_left = 10.0
+offset_right = 360.0
+offset_bottom = 445.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(360, 0)
+layout_mode = 0
+offset_top = 456.0
+offset_right = 385.0
+offset_bottom = 1063.0
+mouse_filter = 2
+
+[node name="InfoPanel" type="PanelContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(360, 438)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jypcg")
+
+[node name="VBoxInfo" type="VBoxContainer" parent="VBoxContainer/InfoPanel"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="StatsHeader" type="HBoxContainer" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="AtkDefLabel" type="Label" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_jypcg")
+theme_override_font_sizes/font_size = 22
+
+[node name="Spacer" type="Control" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="TypeIcon" type="TextureRect" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="AttributeIcon" type="TextureRect" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="GuardianStarIcon" type="TextureRect" parent="VBoxContainer/InfoPanel/VBoxInfo/StatsHeader"]
+layout_mode = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_jypcg")
+
+[node name="NameLabel" type="RichTextLabel" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="TypeLabel" type="RichTextLabel" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="AttributeLabel" type="RichTextLabel" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="GuardianStarLabel" type="RichTextLabel" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_jypcg")
+
+[node name="DescLabel" type="RichTextLabel" parent="VBoxContainer/InfoPanel/VBoxInfo"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+autowrap_mode = 2

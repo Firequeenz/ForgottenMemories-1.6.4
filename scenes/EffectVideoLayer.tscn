@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://5mucpuxlteg6"]
+
+[ext_resource type="Script" uid="uid://m4qyevuv4bey" path="res://scenes/EffectVideoLayer.gd" id="1"]
+[ext_resource type="VideoStream" uid="uid://dpaoan0bqd4um" path="res://assets/videos/exodia.ogv" id="2"]
+
+[node name="EffectVideoLayer" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2")
+expand = true
